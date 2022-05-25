@@ -1,0 +1,37 @@
+{
+	"name": "toolbox-api",
+	"version": "1.0.0",
+	"description": "toolbox test",
+	"main": "src/index.js",
+	"author": "Dario Galeano",
+	"license": "ISC",
+	"scripts": {
+		"dev": "standard --fix && nodemon server.js",
+		"start": "node server.js",
+		"lint": "standard",
+		"test": "mocha test/*.js --timeout 15000"
+	},
+	"devDependencies": {
+		"standard": "^17.0.0",
+		"chai": "*",
+		"chai-http": "^3.0.0",
+		"mocha": "^3.5.0"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"esm": "^3.2.25",
+		"express": "^4.18.1",
+		"figlet": "^1.5.2",
+		"helmet": "^5.1.0",
+		"node-fetch": "2.6.0",
+		"nodemon": "^2.0.16"
+	},
+	"standard": {
+		"globals": [
+			"describe",
+			"it",
+			"expect"
+		]
+	}
+}
